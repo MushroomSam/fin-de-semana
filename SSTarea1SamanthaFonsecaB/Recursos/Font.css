@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "sam";
+    src: url("/Recursos/Fonts/Montserrat-SemiBold.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "sam";
+    src: url("/Recursos/Fonts/Montserrat-ExtraBold.ttf") format("truetype");
+    font-weight: 900;
+}

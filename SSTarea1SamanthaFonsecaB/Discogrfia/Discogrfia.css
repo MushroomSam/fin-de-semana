@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "sam";
+  font-weight: 900;
+  line-height: 1.6;
+  font-size: 16px;
+  background-image: url(/Recursos/Background/fondo.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 8rem;
+  color: #fcefb0;
+  text-shadow: 2px 2px 4px rgb(47, 3, 4), 0px 0px 15px #fcefb0;
+  background: #2f0304e5;
+}
+
+/* barra de navegacion */
+.navegador ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background: #2f0304;
+}
+.navegador a {
+  color: #fcefb0;
+  text-decoration: none;
+  padding: 10px 100px;
+  display: block;
+  letter-spacing: 2px;
+  transition: all 0.2s ease;
+  text-shadow: 2px 2px 4px rgb(47, 3, 4), 0px 0px 15px #fcefb0;
+}
+.navegador a:active {
+  transform: scale(0.96);
+}
+.navegador a:hover {
+  background-color: #fcefb0;
+  color: #2f0304;
+  text-shadow: 2px 2px 4px rgb(47, 3, 4);
+  font-weight: 900;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+main {
+  align-content: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.Albunes {
+  background: #2f0304e5;
+  padding: 40px;
+  display: flex;
+  flex-flow: wrap row;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+  box-shadow: 4px 4px 2px #2f0304e5;
+}
+
+.Albun {
+  margin: 5px;
+  overflow: hidden;
+  background: #2f0304e5;
+  border-radius: 20px;
+  margin: 40px;
+  box-shadow: 0px 0px 10px #fcefb0a4;
+}
+
+.Albun:hover {
+  scale: 1.2;
+}
+
+.portada {
+  height: 300px;
+  width: 300px;
+  align-content: center;
+  justify-content: center;
+  border-radius: 10px;
+  list-style: none;
+  flex-direction: column;
+  display: flex;
+  margin: 20px;
+}
+
+.descripcion {
+  text-decoration: none;
+  text-shadow: 1px 1px 2.5px rgb(47, 3, 4, 0.8);
+  letter-spacing: 2px;
+  color: #fcefb0;
+  display: flex;
+  margin-bottom: 20px;
+  align-content: center;
+  letter-spacing: 2px;
+  justify-content: center;
+  box-shadow: 0px 0px 10px #2f0304;
+}
+
+header h2 {
+  color: #fcefb0;
+  text-align: center;
+  font-size: 5rem;
+  text-shadow: 6px 6px 2px rgb(47, 3, 4);
+}
+
+footer {
+  background: #2f0304;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background: #2f0304;
+}
+
+footer a {
+  color: #fcefb0;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  transition: all 0.2s ease;
+  text-shadow: 2px 2px 4px rgb(47, 3, 4), 0px 0px 15px #fcefb0;
+}
+
+footer a:active {
+  transform: scale(0.96);
+}
+footer a:hover {
+  background-color: #fcefb0;
+  color: #2f0304;
+  text-shadow: 2px 2px 4px rgb(47, 3, 4);
+  font-weight: 900;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.copy {
+  color: #fcefb0;
+  text-shadow: 2px 2px 4px rgb(47, 3, 4), 0px 0px 15px #fcefb0;
+  letter-spacing: 2px;
+  display: block;
+  display: flex;
+  justify-content: center;
+  background: #2f0304;
+  margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 4rem;
+  }
+
+  .navegador a {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .Albunes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Albun {
+    margin: 20px 0;
+    width: 90%;
+  }
+
+  .portada {
+    height: 200px;
+    width: 200px;
+  }
+
+  header h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  header h1 {
+    font-size: 6rem;
+  }
+
+  .navegador a {
+    padding: 10px 50px;
+    font-size: 16px;
+  }
+
+  main {
+    padding: 30px;
+  }
+
+  .Albunes {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .Albun {
+    margin: 20px;
+    width: 40%;
+  }
+
+  .portada {
+    height: 250px;
+    width: 250px;
+  }
+
+  header h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 901px) {
+  header h1 {
+    font-size: 8rem;
+  }
+
+  .navegador a {
+    padding: 10px 100px;
+    font-size: 18px;
+  }
+
+  main {
+    padding: 40px;
+  }
+
+  .portada {
+    height: 300px;
+    width: 300px;
+  }
+
+  header h2 {
+    font-size: 5rem;
+  }
+}
